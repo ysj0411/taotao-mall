@@ -1,8 +1,12 @@
 package com.taotao.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.taotao.comon.pojo.EasyUIGridResult;
 import com.taotao.comon.pojo.TaotaoResult;
 import com.taotao.mapper.TbItemParamMapper;
-import com.taotao.po.TbItemExample;
+import com.taotao.po.TbItem;
+
 import com.taotao.po.TbItemParam;
 import com.taotao.po.TbItemParamExample;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,5 +52,20 @@ public class ItemParamService implements com.taotao.service.ItemParamService {
         //插入记录
         tbItemParamMapper.insert(itemParam);
         return TaotaoResult.ok();
+    }
+
+    @Override
+    public EasyUIGridResult getItemParamList(int page, int rows) {
+
+
+        PageHelper.startPage(page, rows);
+        TbItemParamExample example=new TbItemParamExample();
+        List<TbItemParam> list = tbItemParamMapper.selectByExampleWithBLOBs(example);
+
+        PageInfo<TbItemParam> pageInfo=new PageInfo<>(list);
+        EasyUIGridResult result=new EasyUIGridResult();
+        result.setTotal(pageInfo.getTotal());
+        result.setRows(list);
+        return result;
     }
 }

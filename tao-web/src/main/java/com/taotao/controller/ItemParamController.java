@@ -1,5 +1,6 @@
 package com.taotao.controller;
 
+import com.taotao.comon.pojo.EasyUIGridResult;
 import com.taotao.comon.pojo.TaotaoResult;
 import com.taotao.service.ItemParamService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,5 +31,12 @@ public class ItemParamController {
         TaotaoResult result = itemParamService.insertItemParam(cid, paramData);
         return result;
     }
+    @RequestMapping("/list")
+    @ResponseBody
+    public EasyUIGridResult getItemParamList(Integer page, Integer rows){
+        EasyUIGridResult result = itemParamService.getItemParamList(page, rows);
+        return result;
+    }
+
 
 }

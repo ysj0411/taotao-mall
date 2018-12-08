@@ -103,7 +103,10 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.taotao.po.TbContentCategory">
-    insert into tb_content_category (id, parent_id, name, 
+      <selectKey keyProperty="id" order="AFTER" resultType="Long">
+        SELECT LAST_INSERT_ID();
+      </selectKey>
+    insert into tb_content_category (id, parent_id, name,
       status, sort_order, is_parent, 
       created, updated)
     values (#{id,jdbcType=BIGINT}, #{parentId,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, 
