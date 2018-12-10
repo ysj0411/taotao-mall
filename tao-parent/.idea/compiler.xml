@@ -11,6 +11,7 @@
         <module name="tao-pojo" />
         <module name="tao-portal" />
         <module name="tao-rest" />
+        <module name="tao-search" />
         <module name="tao-service" />
         <module name="tao-web" />
       </profile>

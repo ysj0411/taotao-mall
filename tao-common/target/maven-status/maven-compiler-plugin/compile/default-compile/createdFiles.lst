@@ -1,5 +1,7 @@
+com\taotao\comon\utils\HttpClientUtil.class
 com\taotao\comon\pojo\EasyUIGridResult.class
 com\taotao\comon\utils\FastDFSClient.class
+com\taotao\comon\utils\ExceptionUtil.class
 com\taotao\comon\pojo\EasyUITreeNode.class
 com\taotao\comon\pojo\PictureResult.class
 com\taotao\comon\pojo\TaotaoResult.class
