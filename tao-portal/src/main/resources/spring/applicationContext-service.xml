@@ -18,8 +18,12 @@
     <!-- 加载配置文件 -->
     <context:property-placeholder location="classpath:properties/resource.properties" />
     <context:component-scan base-package="com.taotao.portal.service"/>
+    <bean id="freeMarkerConfigurer"
+          class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+        <property name="templateLoaderPath" value="/WEB-INF/ftl/"/>
+        <property name="defaultEncoding" value="UTF-8"/>
 
-
+    </bean>
 
 
 

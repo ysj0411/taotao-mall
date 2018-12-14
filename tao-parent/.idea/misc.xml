@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../tao-order" />
     <file type="web" url="file://$PROJECT_DIR$/../tao-portal" />
     <file type="web" url="file://$PROJECT_DIR$/../tao-search" />
+    <file type="web" url="file://$PROJECT_DIR$/../tao-sso" />
     <file type="web" url="file://$PROJECT_DIR$/../tao-web" />
     <file type="web" url="file://E:/works1t/tao-rest" />
   </component>
@@ -15,6 +17,8 @@
         <option value="E:/works1t/tao-rest/pom.xml" />
         <option value="$PROJECT_DIR$/../tao-portal/pom.xml" />
         <option value="$PROJECT_DIR$/../tao-search/pom.xml" />
+        <option value="$PROJECT_DIR$/../tao-sso/pom.xml" />
+        <option value="$PROJECT_DIR$/../tao-order/pom.xml" />
       </list>
     </option>
   </component>

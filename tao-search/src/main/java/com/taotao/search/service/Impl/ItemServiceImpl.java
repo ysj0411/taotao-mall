@@ -38,6 +38,6 @@ public class ItemServiceImpl implements ItemService {
         //提交修改
         solrServer.commit();
         return TaotaoResult.ok();
-    }
+}
 
 }

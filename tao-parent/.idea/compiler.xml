@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="tao-common" />
         <module name="tao-dao" />
+        <module name="tao-order" />
         <module name="tao-pojo" />
         <module name="tao-portal" />
         <module name="tao-rest" />
         <module name="tao-search" />
         <module name="tao-service" />
+        <module name="tao-sso" />
         <module name="tao-web" />
       </profile>
     </annotationProcessing>
