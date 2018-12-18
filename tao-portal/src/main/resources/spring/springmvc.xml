@@ -17,13 +17,13 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
-<!--<mvc:interceptors>-->
-    <!--<mvc:interceptor>-->
-        <!--<mvc:mapping path="/order/**"/>-->
-        <!--<bean class="com.taotao.portal.LoginInterceptor"></bean>-->
+<mvc:interceptors>
+    <mvc:interceptor>
+        <mvc:mapping path="/order/**"/>
+        <bean class="com.taotao.portal.LoginInterceptor"></bean>
 
-    <!--</mvc:interceptor>-->
-<!--</mvc:interceptors>-->
+    </mvc:interceptor>
+</mvc:interceptors>
 
 
 </beans>

@@ -6,13 +6,16 @@ com\taotao\portal\controller\SearchController.class
 com\taotao\portal\LoginInterceptor.class
 com\taotao\portal\pojo\Item.class
 com\taotao\portal\service\Impl\StaticPageServiceImpl.class
+com\taotao\portal\service\OrderService.class
 com\taotao\portal\controller\ItemController.class
 com\taotao\portal\pojo\CartItem.class
 com\taotao\portal\service\Impl\CartServiceImpl.class
 com\taotao\portal\controller\OrderController.class
 com\taotao\portal\service\Impl\ContentServiceImpl.class
 com\taotao\portal\service\StaticPageService.class
+com\taotao\portal\pojo\OrderInfo.class
 com\taotao\portal\service\SearchService.class
+com\taotao\portal\service\Impl\OrderServiceImpl.class
 com\taotao\portal\controller\StaticPageController.class
 com\taotao\portal\service\Impl\UserServiceImpl.class
 com\taotao\portal\controller\CartController.class

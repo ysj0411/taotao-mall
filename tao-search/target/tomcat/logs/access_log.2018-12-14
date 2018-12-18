@@ -1,2 +1,0 @@
-127.0.0.1 - - [14/Dec/2018:11:18:09 +0800] "GET /search/q?page=1&keyword=%E5%B0%8F%E7%B1%B3&rows=60 HTTP/1.1" 200 3223 http-bio-8083-exec-1 242
-127.0.0.1 - - [14/Dec/2018:18:40:48 +0800] "GET /search/q?page=1&keyword=%E5%B0%8F%E7%B1%B3&rows=60 HTTP/1.1" 200 3223 http-bio-8083-exec-3 26
